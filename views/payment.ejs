@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/payment.css">
+</head>
+
+<body id="home">
+
+  <main class="container">
+
+    <section class="container-tophalf">
+
+      <!--============== Navigation Bar ===================== -->
+        
+
+      <header class="container-nav">
+        <img src="img/logo-big.png" alt="logo" class="logo">
+
+        <nav>
+          <ul class="nav-bar">
+            <li class="nav-links"> <a href="/dashboard" class="nav-items">Home</a> </li>
+            <li class="nav-links"> <a href="/connect" class="nav-items">Connect Account</a> </li>
+            <li class="nav-links"> <a href="/load" class="nav-items">LOAD WALLET</a> </li>   
+            <li class="nav-links"> <a href="/payment" class="nav-items">Payment</a> </li>
+            
+            <li class="nav-links"> <a href="/transactions" class="nav-items">Transactions</a> </li>
+          </ul>
+        </nav>
+
+        <a href="/logout" class="login"><button class="btn">Logout</button> </a>
+      </header>
+
+    </section>
+
+    <br>
+
+
+
+    <div class="payment">
+      <h1 class="paymentText">Choose a method to make payment</h1>
+      <br>
+
+      <br>
+      <h1 class="methodPayment"><a href="#digitalWallet">Using Digital Wallet</a></h1>
+      <h1 class="methodPayment"><a href="#cryptoWallet">Using Crypto Wallet</a></h1>
+      <br>
+
+      <img src="img/dollar.png" alt="" class="bankIconHeader">
+      <img src="img/btc.png" alt="" class="btcIconHeader">
+    </div>
+
+
+
+
+    <!-- digital wallet payment-->
+
+    <div id="digitalWallet">
+      <div class="dw">
+        <h1>Pay Using Digital Wallet</h1>
+      </div>
+
+      <br>
+      <br>
+      <form action="/digiPay" method="POST">
+          <h3>Your Balance: <span class="balanceBox"><%= Accbalance %></span> </h3>
+          <br>
+          <br>
+              <table>
+                <tr>
+                  <td align="left">
+                    <h3>Enter Amount to Pay </h3>
+                  </td>
+                  <td align="left"><input type="number" name="Tamount" class="Box"></td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <h3>Enter Recipient Name </h3>
+                  </td>
+                  <td align="left"><input type="text" name="Tname" class="Box"></td>
+                </tr> 
+                <tr>
+                  <td align="left">
+                    <h3>Enter Transaction Pin </h3>
+                  </td>
+                  <td align="left"><input type="password" name="Tpin" class="Box"></td>
+                </tr>
+              </table><br>
+
+          <button type="submit" name="pay" class="btn btn-lg">Pay</button>
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="cryptoWallet">
+      <div class="dw">
+        <h1>Pay Using Crypto Wallet</h1>
+      </div>
+
+      <br>
+      <br>
+
+      <h3>Choose type of Crypto Currency :</h3>
+
+
+
+
+
+      <input type="radio" name="selectedCrypto" value="crypto1" class="cryptoType">
+      <label for="crypto1">Bitcoin</label>
+
+
+      <input type="radio" name="selectedCrypto" value="crypto2" class="cryptoType">
+      <label for="crypto2">Dogecoin</label>
+
+      <input type="radio" name="selectedCrypto" value="crypto3" class="cryptoType">
+      <label for="crypto3">Etherium</label><br>
+
+      <br>
+
+      <h3>Your Balance: <span class="balanceBox">2.75</span> </h3>
+      <br>
+      <br>
+
+
+
+      <form>
+        <table>
+          <tr>
+            <td align="left"><h3>Enter Amount to Pay : </h3></td>
+            <td align="left"><input type="number" name="paymentAmount" class="Box"></td>
+          </tr>
+          <tr>
+            <td align="left"><h3>Enter Recipient’s wallet address : </h3></td>
+            <td align="left"><input type="text" name="paymentAmount" class="Box"></td>
+          </tr>
+          <tr>
+            <td align="left">  <h3>Enter Your Private Key : </h3></td>
+            <td align="left"><input type="password" name="paymentAmount" class="Box"></td>
+          </tr>
+        </table>
+      </form>
+      <br>
+
+      <button type="submit" name="pay" class="btn btn-lg">Pay</button>
+    </div>
+  </main>
+
+
+</html>

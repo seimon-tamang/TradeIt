@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+
+
+}
+
+body{
+
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Comfortaa', cursive, sans-serif;
+    line-height: 1.6;   
+    background: linear-gradient(to right,#2657eb, #de6161);
+}
+
+h1,h2,h4{
+
+    line-height: 1.3;
+}
+h3{
+  display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+  font-size: 120%;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+/* img{
+    width: 80%;
+} */
+
+
+
+
+
+
+
+/* ============== NAVIGATION BAR===================== */
+
+.container{
+
+    background: linear-gradient(to right,#2657eb, #de6161);
+
+
+    margin: auto;
+    overflow: hidden;
+
+
+}
+
+
+#digitalWallet{
+
+
+    background: linear-gradient(to right,#22c1c3, #fdbb2d);
+
+    font-size: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+
+    padding:5% 16% 16%;
+}
+
+#cryptoWallet{
+
+
+    background: linear-gradient(to right,#eeaeca, #94bbe9);
+
+    font-size: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+    padding: 5% 16% 16%;
+}
+
+.icon{
+  padding: 2%;
+
+}
+
+.bankIconHeader{
+  padding: 5% 12% 5% 5%;
+  width: 25%;
+}
+
+.btcIconHeader{
+  padding: 5% 5% 5% 12%;
+  width: 25%;
+}
+
+.container-tophalf{
+
+    /* max-width: 1100px; */
+
+
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+
+.container-nav{
+
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* background-color: olivedrab; */
+}
+
+
+
+img.logo{
+    cursor: pointer;
+    width: 6rem;
+    height: 5rem;
+
+}
+
+
+
+.nav-bar .nav-links{
+    display: inline-block;
+    margin: 33px 20px 0px 20px;
+
+}
+
+.nav-items {
+
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #FFFDE4;
+    transition: all 0.3s ease 0s;
+    font-size: 1.2rem;
+}
+
+
+.nav-items:hover {
+    color: #FFEFBA;
+    font-size: 1.5rem;
+
+
+}
+
+
+
+.btn{
+
+    position: relative;
+    margin: 25px 20px;
+    padding: 9px 25px;
+    letter-spacing: 2px;
+
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+
+
+     /* ========= BUTTON DESIGN ========== */
+    border-radius: 50px;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    box-shadow: 0 0 25px #f5487f ;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.8s ease 0s, font-size 0.8s ease 0s;
+
+}
+
+
+.btn:hover{
+    font-size: 1.3rem;    /* increase font size */
+    box-shadow: 0 0 5px #f5487f,    /* increase shadow */
+                0 0 25px #f5487f,
+                0 0 50px #f5487f,
+                0 0 100px #f5487f;
+
+}
+
+
+
+/* ============== SECTION ===================== */
+
+.container-section{
+    width: 100%;
+    top: 20%;
+    left: 130px;
+    color: #fff;
+
+}
+
+.container-section .section-items{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+    /* background-color: black; */
+    /* padding-top: 2rem; */
+    margin-top: 2rem;
+
+
+}
+
+
+.container-section .text{
+    padding-top: 5rem;
+    /* background-color: burlywood; */
+}
+
+.container-section .text h1{
+       font-size: 4rem;
+
+}
+
+.container-section .text p {
+    font-size:1rem ;
+    margin: 2rem 1rem;
+
+}
+
+
+.img img{
+    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+     /* padding-left: 10rem; */
+
+    animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate{
+
+    0%,100%
+    {
+        transform: translateY(50px);
+
+    }
+    50%{
+        transform: translateY(80px);
+    }
+}
+
+
+/* <!--============== Overlay Section ===================== --> */
+
+
+.container-overlay{
+    background-color: #fff;
+}
+
+.container-overlay .container-description .about-heading{
+    text-align: center;
+
+
+}
+
+.container-overlay .container-description .about-heading h5{
+    font-size: 1rem;
+    padding: 1.2rem 0;
+    color: #161616;
+}
+
+.container-overlay .container-description .about-heading h2{
+    font-size: 3rem;
+    color: #161616;
+
+
+}
+
+.container-overlay .container-description .about-heading p{
+   /* background-color: blue; */
+    padding: 2rem ;
+    color: #3F3F3F;
+
+
+}
+
+
+.container-overlay .container-description .about{
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.container-overlay .container-description .about .about-us h1{
+    padding: 0 0 1rem 0;
+    font-size: 1.6rem;
+    color: #3F3F3F;
+
+
+}
+
+.container-overlay .container-description .about .about-us h2{
+    padding: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #3F3F3F;
+
+
+
+}
+
+.container-overlay .container-description .about .about-us p{
+    padding: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #7D7D7D;
+
+
+
+}
+
+
+.container-overlay .container-description .about .about-us-image{
+    width: 100%;
+
+}
+
+.methodPayment{
+  padding: 50px ;
+  display: inline;
+
+  margin: 3rem;
+}
+
+.payment{
+  text-align:center;
+  margin-bottom: 25%;
+  padding-top: 5rem;
+}
+
+.paymentText{
+  font-size: 3rem;
+}
+
+.balanceBox{
+  border: 2px solid white;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+.dw{
+  text-align: center;
+}
+
+.Box{
+  width: 100%;
+  margin: 1.25rem;
+}
+.cryptoType{
+  margin: 1rem 0.1rem 1rem 1rem;
+}
+
+
+
+
+/* ============== Media Queries===================== */
+
+@media(max-width: 1110px){
+
+    .container-section .section-items{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+
+
+    }
+
+    .container-section .text{
+        padding-top: 0;
+        /* background-color: burlywood; */
+    }
+
+    .container-section .section-items div:nth-child(1){
+        order: 2;
+    }
+
+    .container-section .section-items div:nth-child(2){
+        order: 1;
+    }
+
+    .container-section .text h1{
+        padding: 2rem 0 0 0;
+        font-size: 2rem;
+
+    }
+
+    .container-section .text p {
+        font-size:.72rem ;
+        margin: 2rem 1rem;
+
+    }
+
+    .img img{
+        width: 40%;
+        margin:auto;
+    }
+
+
+     /* ============== Media Queries Aboutus ===================== */
+
+
+    .container-overlay .container-description .about{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+ /* ========= load money 1========== */
+.parent {
+    
+    position: relative;
+  }
+  
+  .child {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+    
+    background: linear-gradient(to right, #f12711, #f5af19);
+    box-shadow: 0 0 25px #f5487f ;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.8s ease 0s, font-size 0.8s ease 0s;
+    border: #2657eb;
+    border-radius: 25px;
+    
+  }
+
+  #one{
+      padding: 10px;
+      font-size: 30px;
+     font-weight: 600;
+      text-align: center;
+      color:#031f75;
+      
+    }
+ #loadbtn{
+     align-content: center;
+     position: relative;
+    margin: 25px 20px;
+    padding: 9px 25px;
+    letter-spacing: 2px;
+
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+
+
+    
+    border-radius: 50px;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    box-shadow: 0 0 25px #f5487f ;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.8s ease 0s, font-size 0.8s ease 0s;
+ }
+ 
+
+ /* ========= LOAD MONEY 2 ========== */
+
+  .box{
+      width: 600px;
+      padding: 40px;
+      position: absolute;
+      top: 10%;
+      left:50%;
+      bottom:10px;
+      margin-bottom:50px;
+      transform: translate(-50%,50%);
+      background-image: linear-gradient(#cc2b5e,#753a88 );
+      text-align:center;
+      border-radius: 24px;
+      
+  }
+
+  .box h1{
+      color: black;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+
+  .box input[type = "text"],.box input[type = "password"],.box input[name="bank"]{
+      border:0;
+      background: none;
+      display:block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #000428;
+      padding: 14px 10px;
+      width: 380px;
+      outline: none;
+      color:#000428;
+      border-radius:24px;
+      transition: 0.25s;
+
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus
+  {
+  width: 200px;
+  border-color: #2657eb;  
+  
+}
+
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color:rgb(13, 19, 104);
+    border-radius:24px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+}
+
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#000428;
+    opacity: 1; /* Firefox */
+  }
+  
+
+
+ 
+
+
+ 

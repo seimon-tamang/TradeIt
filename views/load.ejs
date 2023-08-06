@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs')-%>
+
+</section>
+<div>
+<form class="box" action="/loadMoney" method="post">
+
+    <h1>LOAD MONEY</h1>
+    <br>
+    <span> Bank: <%=bankName%></span>
+    <br>
+    <br>
+    <span class="ld">Account Number: <%=accountNo%>  </span>
+    <br>
+    <br>
+    <span class="ld"> Balance: <%= bal%> </span>          
+    <input type="text" placeholder="Amount" name="amount">
+    <input type ="password" placeholder="password" name="password">
+    <input type="submit" name="" value="LOAD">
+    
+    
+ </form>
+ <br>
+ <br>
+</div>
+
+</body>
+</html>

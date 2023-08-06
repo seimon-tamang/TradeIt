@@ -1,0 +1,74 @@
+<%- include("partials/header") -%>
+
+
+    </section>
+  </main>
+
+  <main>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="connectDiv">
+      <h1 class="connectHeading"><a href="#connectBankAccount">CONNECT BANK ACCOUNT</a></h1>
+
+
+      <h1 class="connectHeading"><a href="#connectCryptoAccount">CONNECT CRYPTO ACCOUNT</a></h1>
+      <br>
+
+      <img src="img/bank2.png" alt="" class="bankIconHeader">
+      <img src="img/btc.png" alt="" class="btcIconHeader">
+
+    </div>
+
+
+  </main>
+
+
+
+  <div id="connectBankAccount">
+
+    <h3>For connecting Bank Account</h3>
+    <form action="/bank" method="POST" >  
+     <img src="img/bank.png" class="icon">
+     <br>
+      <label for="banks">Enter your bank's name: </label>
+      <input type="text" name="bankName" style="width: 30%">
+      <br>
+
+      <label for="accountNo">Enter your Account Number: </label>
+      <input type="text" name="accountNumber" style="width: 30%">
+      <br>
+      <button type="submit" name="connectButton" class="btn">Connect Bank Account</button>
+    </form>
+
+
+  </div>
+
+  <div id="connectCryptoAccount">
+
+    <h3>For connecting Crypto Account</h3>
+    <form action="/cryptoconnect" method="POST"> 
+      <img src="img/crypto2.png" class="icon">
+     <br>
+     <label for="banks">Enter type of cryptocurrency: </label>
+      <input type="text" name="cryptoName" style="width: 30%">
+      <br>
+
+      <label for="username">Enter your username: </label>
+      <input type="text" name="userNameCrypto" style="width: 30%">
+      <br>
+
+      <label for="password">Enter your password: </label>
+      <input type="password" name="cryptoPassword" style="width: 30%">
+      <br>
+      <button type="submit" name="connectButton" class="btn">Connect Crypto Account</button>
+    </form>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
